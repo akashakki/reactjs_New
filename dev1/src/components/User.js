@@ -15,8 +15,9 @@ export default class User extends React.PureComponent {
                 <Button onClick={ ()=>this.props.onDelete(index)}>Delete</Button>
               </List.Content>
               <List.Content>
-                {author.title}
+                {author.title}  <div className='desc'>{author.desc}</div>
               </List.Content>
+              
             </List.Item>
           </List>
         ) : null
